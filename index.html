@@ -13,12 +13,13 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
         h1 {
             color: #333;
@@ -49,6 +50,16 @@
             display: block;
             margin: 0 auto 10px;
         }
+        .image-container {
+            position: relative;
+        }
+        .arrow {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            stroke: black;
+            stroke-width: 2;
+        }
     </style>
 </head>
 <body>
@@ -56,14 +67,39 @@
         <h1>Download Center</h1>
         <div class="button-container">
             <a href="documents/driver1.zip" class="button" download>
-                <img src="images/image1.png" alt="Driver 1">
+                <img src="images/enviroment.png" alt="Driver 1">
                 <span>Download Driver 1</span>
             </a>
             <a href="documents/manual.pdf" class="button" download>
-                <img src="images/image2.png" alt="Manual">
+                <img src="images/main.png" alt="Manual">
                 <span>Download Manual</span>
             </a>
+            <a href="documents/driver2.zip" class="button" download>
+                <img src="images/Shiratec.png" alt="Driver 2">
+                <span>Download Driver 2</span>
+            </a>
+            <a href="documents/specifications.pdf" class="button" download>
+                <img src="images/Sensor.png" alt="Specifications">
+                <span>Download Specifications</span>
+            </a>
+        </div>
+        <div class="image-container">
+            <img src="images/your-image.png" alt="Diagram">
+            <svg class="arrow" style="top: 50px; left: 150px;">
+                <line x1="0" y1="0" x2="100" y2="100" marker-end="url(#arrowhead)"/>
+            </svg>
+            <svg class="arrow" style="top: 150px; left: 250px;">
+                <line x1="0" y1="0" x2="100" y2="100" marker-end="url(#arrowhead)"/>
+            </svg>
+            <!-- More arrows as needed -->
         </div>
     </div>
+    <svg width="0" height="0">
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" />
+            </marker>
+        </defs>
+    </svg>
 </body>
 </html>
