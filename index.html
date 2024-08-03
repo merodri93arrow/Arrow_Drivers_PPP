@@ -54,9 +54,13 @@
             position: relative;
             margin-top: 40px;
         }
+        .image-container img {
+            width: 100%;
+        }
         .arrow {
             position: absolute;
             width: 2px;
+            height: 100px;
             background-color: black;
         }
         .arrow:after {
@@ -72,24 +76,18 @@
         }
         .sensor-arrow {
             left: 10%;
-            top: 70px;
-            height: 100px;
+            top: 10%;
+            height: 150px;
         }
         .shiratech-arrow {
             left: 45%;
-            top: 70px;
-            height: 100px;
+            top: 10%;
+            height: 150px;
         }
         .main-arrow {
             left: 80%;
-            top: 70px;
-            height: 100px;
-        }
-        .bottom-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 100px;
-            margin-top: 150px;
+            top: 10%;
+            height: 150px;
         }
     </style>
 </head>
@@ -119,20 +117,6 @@
             <div class="arrow sensor-arrow"></div>
             <div class="arrow shiratech-arrow"></div>
             <div class="arrow main-arrow"></div>
-        </div>
-        <div class="bottom-buttons">
-            <a href="documents/sensor1.zip" class="button" download>
-                <img src="images/sensor1.png" alt="Sensor 1">
-                <span>Download Sensor 1</span>
-            </a>
-            <a href="documents/shiratech.zip" class="button" download>
-                <img src="images/shiratech.png" alt="Shiratech">
-                <span>Download Shiratech</span>
-            </a>
-            <a href="documents/mainboard.zip" class="button" download>
-                <img src="images/mainboard.png" alt="Mainboard">
-                <span>Download Mainboard</span>
-            </a>
         </div>
     </div>
 </body>
